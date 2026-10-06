@@ -1,0 +1,56 @@
+COURSE DES LÉGENDES : installer le jeu sur ton téléphone
+=========================================================
+
+Ce dossier contient tout ce qu'il faut :
+  index.html            le jeu
+  manifest.webmanifest  la fiche d'identité de l'appli (nom, icône, couleurs)
+  sw.js                 le mode hors ligne
+  icon-*.png            les icônes
+
+ÉTAPE 1 : mettre le jeu en ligne avec GitHub Pages (gratuit)
+-------------------------------------------------------------
+1. Va sur github.com et connecte-toi (ou crée un compte gratuit).
+2. Clique sur "+" en haut à droite, puis "New repository".
+3. Donne un nom au dépôt, par exemple : course-des-legendes
+   Choisis "Public", puis clique sur "Create repository".
+4. Clique sur "uploading an existing file" (lien au milieu de la page).
+5. Dézippe ce dossier sur ton ordinateur, puis glisse TOUS les fichiers
+   (pas le dossier lui-même) dans la page GitHub.
+6. Clique sur "Commit changes".
+7. Va dans "Settings", puis "Pages" (menu de gauche).
+   Sous "Branch", choisis "main" et le dossier "/ (root)", puis "Save".
+8. Attends 1 à 2 minutes. L'adresse de ton jeu s'affiche en haut de la page :
+   https://TON-NOM.github.io/course-des-legendes/
+
+ÉTAPE 2 : l'installer sur ton téléphone
+----------------------------------------
+Ouvre l'adresse ci-dessus sur ton téléphone, puis :
+
+  Android (Chrome) : menu "⋮" puis "Installer l'application"
+                     (ou "Ajouter à l'écran d'accueil").
+  iPhone (Safari)  : bouton Partager (carré avec une flèche),
+                     puis "Sur l'écran d'accueil".
+                     Il faut absolument utiliser Safari sur iPhone.
+
+L'icône (un drapeau à damier) apparaît sur ton écran d'accueil. Le jeu s'ouvre
+en plein écran, sans la barre du navigateur.
+
+ÉTAPE 3 : vérifier le mode hors ligne
+--------------------------------------
+Ouvre le jeu une première fois avec internet. Ensuite, passe en mode avion
+et relance le jeu : il doit s'ouvrir normalement.
+
+POUR METTRE À JOUR LE JEU PLUS TARD
+------------------------------------
+1. Remplace index.html sur GitHub (bouton "Add file" puis "Upload files").
+2. Ouvre sw.js, et change 'cdl-v1' en 'cdl-v2' (puis v3, etc.).
+   Sans ça, les téléphones gardent l'ancienne version en mémoire.
+3. Sur le téléphone, ferme complètement l'appli puis rouvre-la deux fois.
+
+À SAVOIR
+--------
+- Les noms des joueurs et les réglages du son sont gardés dans le téléphone.
+- Les vibrations fonctionnent sur Android, pas sur iPhone.
+- Le son démarre après le premier appui sur l'écran (règle des navigateurs).
+- Si l'adresse affiche une page 404, attends encore quelques minutes ou vérifie
+  que index.html est bien à la racine du dépôt (pas dans un sous-dossier).
